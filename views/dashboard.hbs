@@ -1,0 +1,16 @@
+<a href="/">Return Home</a>
+<br>
+
+<main class="row">
+    <section class="user-output col">
+        <h1>Welcome, {{user.username}}</h1>
+        <hr>
+        {{#each users.blogs}}
+        <div>
+             <h3> Title: {{title}}</h3>
+            <p> {{blog_text}}</p>
+            <p>Added By: {{user.username}} </p>
+        </div>
+        {{/each}}
+    </section>
+</main>
