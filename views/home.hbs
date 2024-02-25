@@ -1,0 +1,24 @@
+<header>
+    {{#if user}}
+    <p>Welcome, {{user.username}}</p>
+    <a href="/logout">Log Out</a>
+    {{else}}
+    <a href="/signin">Login</a>
+    {{/if}}
+</header>
+
+<div class="container mt-5">
+    <h1 class="display-4">Welcome to TechSpace</h1>
+    <a href="/dashboard">User Dashboard</a>
+    {{#each users.blogs}}
+        <div class="card my-3">
+            <div class="card-body">
+                <h2 class="card-title">{{title}}</h2>
+                <p class="card-text">{{blog_text}}</p>
+            </div>
+        </div>
+    {{/each}}
+
+    <div class="my-3">
+        
+</div>
