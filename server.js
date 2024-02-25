@@ -5,7 +5,7 @@ const session = require( 'express-session');
 
 
 const db = require('./db/connection')
-const PORT = 3001;
+const PORT = 3306;
 const app = express();
 
 // Add Routes 
